@@ -8,13 +8,13 @@ class Menu extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'kategori_id',
-        'nama',
-        'harga',
-        'deskripsi',
-        'tersedia',
-    ];
+    // protected $fillable = [
+    //     'kategori_id',
+    //     'nama',
+    //     'harga',
+    //     'deskripsi',
+    //     'tersedia',
+    // ];
 
     protected $casts = [
         'harga'    => 'decimal:2',

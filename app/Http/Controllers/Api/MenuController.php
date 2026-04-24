@@ -37,7 +37,7 @@ class MenuController extends Controller
 
     public function store(StoreMenuRequest $request)
     {
-        $menu = Menu::create($request->validated());
+        $menu = Menu::create($request->all());//validated
 
         return response()->json([
             'success' => true,
